@@ -10,11 +10,6 @@ def value_iteration(
 ) -> Tuple[tm.VTable, tm.QTable, float]:
     """Computes one step of value iteration.
 
-    Hint 1: Since the terminal state will always have value 0 since
-    initialization, you only need to update values for nonterminal states.
-
-    Hint 2: It might be easier to first populate the Q-value table.
-
     Args:
         mdp: the MDP definition.
         v_table: Value table from the previous iteration.
@@ -32,22 +27,7 @@ def value_iteration(
     q_table: tm.QTable = {}
     # noinspection PyUnusedLocal
     max_delta = 0.0
-    # *** BEGIN OF YOUR CODE ***
-    for state in mdp.nonterminal_states:
-        max_q = float("-inf")
-        for action in mdp.actions:
-            q = 0.0
-            for next_state in mdp.all_states:
-                p = mdp.transition(state, action, next_state)
-                reward = mdp.reward(state, action, next_state)
-                r = mdp.config.gamma * v_table[next_state]
-                q += p * (reward + r)
-            q_table[(state, action)] = q
-            max_q = max(max_q, q)
-        delta = abs(new_v_table[state] - max_q)
-        max_delta = max(max_delta, delta)
-        new_v_table[state] = max_q
-    # *** END OF YOUR CODE ***
+    # Hidden to protect information
     return new_v_table, q_table, max_delta
 
 
@@ -68,11 +48,8 @@ def extract_policy(
         policy: tm.Policy
             A Policy maps nonterminal states to actions.
     """
-    # *** BEGIN OF YOUR CODE ***
     policy = {}
-    for state in mdp.nonterminal_states:
-        best_action = max(mdp.actions, key=lambda a: q_table.get((state, a), 0))
-        policy[state] = best_action
+    # Hidden to protect information
     return policy
 
 
@@ -92,9 +69,7 @@ def q_update(
         alpha: alpha value (i.e., learning rate) for the Q-Value update.
     """
     state, action, reward, next_state = transition
-    # *** BEGIN OF YOUR CODE ***
-    target = reward + mdp.config.gamma * max(q_table.get((next_state, a), 0) for a in mdp.actions)
-    q_table[(state, action)] = (1 - alpha) * q_table.get((state, action), 0) + alpha * target
+    # Hidden to protect information
 
 
 def extract_v_table(mdp: tm.TohMdp, q_table: tm.QTable) -> tm.VTable:
@@ -108,8 +83,7 @@ def extract_v_table(mdp: tm.TohMdp, q_table: tm.QTable) -> tm.VTable:
         v_table: tm.VTable
             The extracted value table.
     """
-    # *** BEGIN OF YOUR CODE ***
-    v_table = {state: max(q_table.get((state, a), 0) for a in mdp.actions) for state in mdp.nonterminal_states}
+    # Hidden to protect information
     return v_table
 
 
@@ -144,8 +118,7 @@ def choose_next_action(
         action: tm.TohAction
             The chosen action.
     """
-    # *** BEGIN OF YOUR CODE ***
-    best_actions = [a for a in mdp.actions if q_table.get((state, a), 0) == max(q_table.get((state, a), 0) for a in mdp.actions)]
+    # Hidden to protect information
     return epsilon_greedy(best_actions, epsilon)
 
 
@@ -161,8 +134,7 @@ def custom_epsilon(n_step: int) -> float:
         epsilon: float
             epsilon value when choosing the nth step.
     """
-    # *** BEGIN OF YOUR CODE ***
-    return 0.5 * (1 - n_step / 100000)
+    # Hidden to protect information
 
 
 def custom_alpha(n_step: int) -> float:
@@ -177,5 +149,4 @@ def custom_alpha(n_step: int) -> float:
         alpha: float
             alpha value when performing the nth Q update.
     """
-    # *** BEGIN OF YOUR CODE ***
-    return 0.5 * (1 - n_step / 100000)
+    # Hidden to protect information
