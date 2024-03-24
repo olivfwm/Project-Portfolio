@@ -45,15 +45,7 @@ class BinaryPerceptron:
               +1 if the current weights classify x_vector as positive i.e. the required dot product must be >=0,
         else  -1 if it is classified as negative.
         """
-        # ADD YOUR CODE HERE
-        # raise NotImplementedError
-        dot_product = 0
-        for i in range(0, len(x_vector)):
-          dot_product += x_vector[i]*self.weights[i]
-
-        dot_product += self.weights[-1]
-        y_hat = +1 if dot_product >= 0 else -1
-        # print(y_hat)
+        # Hidden to protect information
         return y_hat
         
     
@@ -71,19 +63,7 @@ class BinaryPerceptron:
         weight_changed: True if there was a change in the weights
                         else False
         """
-        # ADD YOUR CODE HERE
-        # raise NotImplementedError
-        weight_changed = True if self.classify(x_vector) != y else False
-        #print('w', self.weights)
-        if weight_changed:
-            w_1 = []
-            for i in range(0, len(x_vector)):
-                w_1.append(y * self.alpha * x_vector[i])
-            w_1.append(y * self.alpha)
-            #print('w1', w_1)
-            self.weights = [x + y for x, y in zip(w_1, self.weights)]
-            #print('w+', self.weights)
-        #print(weight_changed)
+        # Hidden to protect information
         return weight_changed
     
     def train_for_an_epoch(self, training_data):
@@ -100,12 +80,8 @@ class BinaryPerceptron:
         changed_count: Return the number of weight updates.
         (If zero, then training has converged.)
         """
-        # ADD YOUR CODE HERE
-        # raise NotImplementedError
         changed_count = 0
-        for i in range(0, len(training_data)):
-          changed_count += 1 if self.train_with_one_example(training_data[i][:-1], training_data[i][-1]) else 0
-
+        # Hidden to protect information
         return changed_count
 
 
