@@ -1,0 +1,132 @@
+Olivia Fang
+UWNetIDs: olivfwm
+Student numbers: 2267383
+
+Assignment 2, Part 1, in CSE 415, Winter 2024
+ 
+This file contains my log of BFS for the problem of
+the Farmer, Fox, Chicken, and Grain.
+
+Welcome to ItrBFS
+Initial State:
+
+ Left bank:['fox', 'chicken', 'grain']
+ Right bank:[]
+ farmer is on the left.
+
+len(OPEN)= 1; len(CLOSED)= 0; COUNT = 0
+OPEN is now: 
+ Left bank:['fox', 'grain']
+ Right bank:['chicken']
+ farmer is on the right.
+
+len(OPEN)= 1; len(CLOSED)= 1; COUNT = 1
+OPEN is now: 
+ Left bank:['fox', 'grain']
+ Right bank:['chicken']
+ farmer is on the left.
+
+len(OPEN)= 1; len(CLOSED)= 2; COUNT = 2
+OPEN is now: 
+ Left bank:['fox']
+ Right bank:['chicken', 'grain']
+ farmer is on the right.
+, 
+ Left bank:['grain']
+ Right bank:['chicken', 'fox']
+ farmer is on the right.
+
+len(OPEN)= 2; len(CLOSED)= 3; COUNT = 3
+OPEN is now: 
+ Left bank:['grain']
+ Right bank:['chicken', 'fox']
+ farmer is on the right.
+, 
+ Left bank:['fox', 'chicken']
+ Right bank:['grain']
+ farmer is on the left.
+
+len(OPEN)= 2; len(CLOSED)= 4; COUNT = 4
+OPEN is now: 
+ Left bank:['fox', 'chicken']
+ Right bank:['grain']
+ farmer is on the left.
+, 
+ Left bank:['grain', 'chicken']
+ Right bank:['fox']
+ farmer is on the left.
+
+len(OPEN)= 2; len(CLOSED)= 5; COUNT = 5
+OPEN is now: 
+ Left bank:['grain', 'chicken']
+ Right bank:['fox']
+ farmer is on the left.
+, 
+ Left bank:['chicken']
+ Right bank:['grain', 'fox']
+ farmer is on the right.
+
+len(OPEN)= 2; len(CLOSED)= 6; COUNT = 6
+OPEN is now: 
+ Left bank:['chicken']
+ Right bank:['grain', 'fox']
+ farmer is on the right.
+
+len(OPEN)= 1; len(CLOSED)= 7; COUNT = 7
+OPEN is now: 
+ Left bank:['chicken']
+ Right bank:['grain', 'fox']
+ farmer is on the left.
+
+len(OPEN)= 1; len(CLOSED)= 8; COUNT = 8
+OPEN is now: 
+ Left bank:[]
+ Right bank:['grain', 'fox', 'chicken']
+ farmer is on the right.
+
+len(OPEN)= 1; len(CLOSED)= 9; COUNT = 9
+Congratulations on successfully carrying all items across the river!
+Solution path: 
+
+ Left bank:['fox', 'chicken', 'grain']
+ Right bank:[]
+ farmer is on the left.
+
+
+ Left bank:['fox', 'grain']
+ Right bank:['chicken']
+ farmer is on the right.
+
+
+ Left bank:['fox', 'grain']
+ Right bank:['chicken']
+ farmer is on the left.
+
+
+ Left bank:['fox']
+ Right bank:['chicken', 'grain']
+ farmer is on the right.
+
+
+ Left bank:['fox', 'chicken']
+ Right bank:['grain']
+ farmer is on the left.
+
+
+ Left bank:['chicken']
+ Right bank:['grain', 'fox']
+ farmer is on the right.
+
+
+ Left bank:['chicken']
+ Right bank:['grain', 'fox']
+ farmer is on the left.
+
+
+ Left bank:[]
+ Right bank:['grain', 'fox', 'chicken']
+ farmer is on the right.
+
+Length of solution path found: 7 edges
+Number of states expanded: 9
+Maximum length of the open list: 2
