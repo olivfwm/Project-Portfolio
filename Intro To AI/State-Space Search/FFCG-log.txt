@@ -1,6 +1,4 @@
 Olivia Fang
-UWNetIDs: olivfwm
-Student numbers: 2267383
 
 Assignment 2, Part 1, in CSE 415, Winter 2024
  
