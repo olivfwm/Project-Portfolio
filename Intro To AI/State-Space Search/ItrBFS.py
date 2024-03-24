@@ -57,61 +57,14 @@ class ItrBFS:
         self.BACKLINKS[initial_state] = None
 
         # STEP 2. If OPEN is empty, output “DONE” and stop.
-        while OPEN != []:
-            report(OPEN, CLOSED, self.COUNT)
-            if len(OPEN) > self.MAX_OPEN_LENGTH:
-                self.MAX_OPEN_LENGTH = len(OPEN)
-
-            # STEP 3. Select the first state on OPEN and call it S.
-            #         Delete S from OPEN.
-            #         Put S on CLOSED.
-            #         If S is a goal state, output its description
-            S = OPEN.pop(0)
-            CLOSED.append(S)
-
-            if self.Problem.GOAL_TEST(S):
-                print(self.Problem.GOAL_MESSAGE_FUNCTION(S))
-                self.PATH = [str(state) for state in self.backtrace(S)]
-                self.PATH_LENGTH = len(self.PATH) - 1
-                print(f"Length of solution path found: {self.PATH_LENGTH} edges")
-                return
-            self.COUNT += 1
-
-            # STEP 4. Generate the list L of successors of S and delete
-            #         from L those states already appearing on OPEN and CLOSED.
-            L = []
-            for op in self.Problem.OPERATORS:
-                if op.is_applicable(S):
-                    new_state = op.apply(S)
-                    if not (new_state in CLOSED or new_state in OPEN):
-                        L.append(new_state)
-                        self.BACKLINKS[new_state] = S
-
-            # STEP 5. Insert all members of L at the back of OPEN.
-            OPEN = OPEN + L
-            print_state_list("OPEN", OPEN)
-
-    # STEP 6. Go to Step 2.
-
-    def backtrace(self, S):
-        path = []
-        while S:
-            path.append(S)
-            S = self.BACKLINKS[S]
-        path.reverse()
-        print("Solution path: ")
-        for s in path:
-            print(s)
-        return path
+        # hidden to protect information
         
 def print_state_list(lst_name, lst):
     """
     Prints the states in lst with name lst_name
     """
     print(f"{lst_name} is now: ", end='')
-    for s in lst[:-1]:
-        print(str(s), end=', ')
-    print(str(lst[-1]))
+    # hidden to protect information
 
 
 def report(opn, closed, count):
