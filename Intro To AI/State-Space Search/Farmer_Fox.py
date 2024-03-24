@@ -1,9 +1,5 @@
 '''Farmer_Fox.py
-[STUDENTS: REPLACE THE FOLLOWING INFORMATION WITH YOUR
-OWN:]
 by Olivia Fang
-UWNetIDs: olivfwm
-Student numbers: 2267383
 
 Assignment 2, in CSE 415, Winter 2024
  
