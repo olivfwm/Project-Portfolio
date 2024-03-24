@@ -70,23 +70,14 @@ class State():
     # Performs an appropriately deep copy of a state,
     # for use by operators in creating new states.
     news = State({})
-    news.d['bank']=[self.d['bank'][LEFT_or_RIGHT][:] for LEFT_or_RIGHT in
-                    [LEFT, RIGHT]]
-    news.d['farmer'] = self.d['farmer']
-    news.d['prev'] = self.d['prev']
-    return news 
+    # hidden to protect information 
 
   def can_move(self, item):
     side = self.d['farmer'] 
     p = self.d['bank']
     if item not in ITEMS: return False #has to be a valid item
     item_avail = p[side]
-    if item not in item_avail: return False #has to be an item on current side
-    item_left = p[side].copy()
-    item_left.remove(item)
-    if item_left in NO: return False #cannot leave chicken with grain, or fox with c
-    if item == self.d['prev']: return False #no bringing item back and forth
-    return True
+    # hidden to protect information
     
   def move(self,item):
     '''Assuming it's legal to make the move, this computes
@@ -94,38 +85,25 @@ class State():
      h humans and r robots.'''
     news = self.copy()      # start with a deep copy.
     side = self.d['farmer']        # where is the farmer?
-    p = news.d['bank']          # get the array of items on banks.
-    p[side].remove(item)  # Remove item from the current side.
-    p[1-side].append(item)  # Add item at the other side.
-    news.d['farmer'] = 1-side      # Move the farmer.
-    news.d['prev'] = item     #set previous item to item
-    return news
+    # hidden to protect information
 
   def can_moveAlone(self):
     side = self.d['farmer'] 
     p = self.d['bank']
-    if p[side] in NO: return False #cannot leave chicken with grain, or fox with c
-    if self.d['prev'] == 'farmer': return False
-    return True
+    # hidden to protect information
     
   def moveAlone(self):
     '''Assuming it's legal to make the move, this computes
      the new state resulting from moving the ferry carrying
      h humans and r robots.'''
     news = self.copy()      # start with a deep copy.
-    side = self.d['farmer']        # where is the farmer?
-    news.d['farmer'] = 1-side      # Move the farmer itself.
-    news.d['prev'] = 'farmer'
-    return news
+    # hidden to protect information
 
 def goal_test(s):
   '''If all items are on the right, then s is a goal state.'''
   p = s.d['bank']
   side = s.d['farmer']
-  for n in ITEMS:
-      if n not in p[RIGHT]:
-          return False
-  return True
+  # hidden to protect information
 
 def goal_message(s):
   return "Congratulations on successfully carrying all items across the river!"
