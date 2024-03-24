@@ -32,19 +32,7 @@ class AStar:
         self.MAX_OPEN_LENGTH = None  # How long OPEN ever gets.
         self.PATH = None  # List of states from initial to goal, along lowest-cost path.
         self.PATH_LENGTH = None  # Number of states from initial to goal, along lowest-cost path.
-        self.TOTAL_COST = None  # Sum of edge costs along the lowest-cost path.
-        self.BACKLINKS = {}  # Predecessor links, used to recover the path.
-        self.OPEN = None  # OPEN list
-        self.CLOSED = None  # CLOSED list
-        self.VERBOSE = True  # Set to True to see progress; but it slows the search.
-
-        # The value g(s) represents the cost along the best path found so far
-        # from the initial state to state s.
-        self.g = {}  # We will use a hash table to associate g values with states.
-        self.h = self.Problem.h  # Heuristic function
-        self.f = {}
-
-        print("\nWelcome to A*.")
+        # hidden to protect information
 
     def runAStar(self):
         """This is an encapsulation of some setup before running
@@ -56,12 +44,7 @@ class AStar:
         self.COUNT = 0
         self.MAX_OPEN_LENGTH = 0
         self.BACKLINKS = {}
-
-        self.AStar(initial_state)
-        print(f"Number of states expanded: {self.COUNT}")
-        print(f"Maximum length of the open list: {self.MAX_OPEN_LENGTH}")
-
-        # print("The CLOSED list is: ", ''.join([str(s)+' ' for s in CLOSED]))
+        # hidden to protect information
 
     def AStar(self, initial_state):
         self.CLOSED = {}
@@ -74,87 +57,14 @@ class AStar:
         self.g[initial_state] = 0.0
         self.f[initial_state] = self.g[initial_state]+self.h(initial_state)
 
-        # STEP 2. If OPEN is empty, output “DONE” and stop.
-        while len(self.OPEN) > 0:
-            if self.VERBOSE:
-                report(self.OPEN, self.CLOSED, self.COUNT)
-            if len(self.OPEN) > self.MAX_OPEN_LENGTH:
-                self.MAX_OPEN_LENGTH = len(self.OPEN)
-
-            # STEP 3. Select the state on OPEN having lowest priority value and call it S.
-            #         Delete S from OPEN.
-            #         Put S on CLOSED.
-            #         If S is a goal state, output its description
-            (S, P) = self.OPEN.delete_min()
-            # print("In Step 3, returned from OPEN.delete_min with results (S,P)= ", (str(S), P))
-            self.CLOSED[S] = P
-
-            if self.Problem.GOAL_TEST(S):
-                print(self.Problem.GOAL_MESSAGE_FUNCTION(S))
-                self.PATH = [str(state) for state in self.backtrace(S)]
-                self.PATH_LENGTH = len(self.PATH) - 1
-                print(f'Length of solution path found: {self.PATH_LENGTH} edges')
-                self.TOTAL_COST = self.f[S]
-                print(f'Total cost of solution path found: {self.TOTAL_COST}')
-                return
-            self.COUNT += 1
-
-            # STEP 4. Generate each successors of S and delete
-            #         and if it is already on CLOSED, check priority, if
-            #           successor has higher value, delete the new instance.
-            gs = self.g[S]  # Save the cost of getting to S in a variable.
-            for op in self.Problem.OPERATORS:
-                if op.is_applicable(S):
-                    new_state = op.apply(S)
-                    edge_cost = S.edge_distance(new_state)
-                    new_g = gs + edge_cost
-                    new_f = new_g + self.h(new_state)
-                    if new_state in self.CLOSED:
-                        if new_f < self.CLOSED[new_state]:
-                            del self.CLOSED[new_state]
-                        else :
-                        # print("Already have this state, in CLOSED. del ...")
-                            del new_state
-                            continue
-                    
-
-                    # If new_state already exists on OPEN:
-                    #   If its new priority is less than its old priority,
-                    #     update its priority on OPEN, and set its BACKLINK to S.
-                    #   Else: forget out this new state object... delete it.
-
-                    if new_state in self.OPEN:
-                        # print("new_state is in OPEN already, so...")
-                        P = self.OPEN[new_state]
-                        if new_f < P:
-                            # print("New priority value is lower, so del older one")
-                            del self.OPEN[new_state]
-                            self.OPEN.insert(new_state, new_f)
-                        else:
-                            # print("Older one is better, so del new_state")
-                            del new_state
-                            continue
-                    else:
-                        # print("new_state was not on OPEN at all, so just put it on.")
-                        self.OPEN.insert(new_state, new_f)
-                    self.BACKLINKS[new_state] = S
-                    self.g[new_state] = new_g
-                    self.f[new_state] = new_f
-
-        # print_state_queue("OPEN", OPEN)
-        # STEP 6. Go to Step 2.
-        return None  # No more states on OPEN, and no goal reached.
+        # hidden to protect information
 
     def backtrace(self, S):
         path = []
         while S:
             path.append(S)
             S = self.BACKLINKS[S]
-        path.reverse()
-        print("Solution path: ")
-        for s in path:
-            print(s)
-        return path
+        # hidden to protect information
 
 
 def print_state_queue(name, q):
