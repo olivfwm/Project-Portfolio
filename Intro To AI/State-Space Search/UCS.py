@@ -79,69 +79,8 @@ class UniformCostSearch:
         self.g[initial_state] = 0.0
 
         # STEP 2. If OPEN is empty, output “DONE” and stop.
-        while len(self.OPEN) > 0:
-            if self.VERBOSE:
-                report(self.OPEN, self.CLOSED, self.COUNT)
-            if len(self.OPEN) > self.MAX_OPEN_LENGTH:
-                self.MAX_OPEN_LENGTH = len(self.OPEN)
-
-            # STEP 3. Select the state on OPEN having lowest priority value and call it S.
-            #         Delete S from OPEN.
-            #         Put S on CLOSED.
-            #         If S is a goal state, output its description
-            (S, P) = self.OPEN.delete_min()
-            # print("In Step 3, returned from OPEN.delete_min with results (S,P)= ", (str(S), P))
-            self.CLOSED.append(S)
-
-            if self.Problem.GOAL_TEST(S):
-                print(self.Problem.GOAL_MESSAGE_FUNCTION(S))
-                self.PATH = [str(state) for state in self.backtrace(S)]
-                self.PATH_LENGTH = len(self.PATH) - 1
-                print(f'Length of solution path found: {self.PATH_LENGTH} edges')
-                self.TOTAL_COST = self.g[S]
-                print(f'Total cost of solution path found: {self.TOTAL_COST}')
-                return
-            self.COUNT += 1
-
-            # STEP 4. Generate each successors of S and delete
-            #         and if it is already on CLOSED, delete the new instance.
-            gs = self.g[S]  # Save the cost of getting to S in a variable.
-            for op in self.Problem.OPERATORS:
-                if op.is_applicable(S):
-                    new_state = op.apply(S)
-                    if new_state in self.CLOSED:
-                        # print("Already have this state, in CLOSED. del ...")
-                        del new_state
-                        continue
-                    edge_cost = S.edge_distance(new_state)
-                    new_g = gs + edge_cost
-
-                    # If new_state already exists on OPEN:
-                    #   If its new priority is less than its old priority,
-                    #     update its priority on OPEN, and set its BACKLINK to S.
-                    #   Else: forget out this new state object... delete it.
-
-                    if new_state in self.OPEN:
-                        # print("new_state is in OPEN already, so...")
-                        P = self.OPEN[new_state]
-                        if new_g < P:
-                            # print("New priority value is lower, so del older one")
-                            del self.OPEN[new_state]
-                            self.OPEN.insert(new_state, new_g)
-                        else:
-                            # print("Older one is better, so del new_state")
-                            del new_state
-                            continue
-                    else:
-                        # print("new_state was not on OPEN at all, so just put it on.")
-                        self.OPEN.insert(new_state, new_g)
-                    self.BACKLINKS[new_state] = S
-                    self.g[new_state] = new_g
-
-        # print_state_queue("OPEN", OPEN)
-        # STEP 6. Go to Step 2.
-        return None  # No more states on OPEN, and no goal reached.
-
+        # hidden to protect information
+ 
     def backtrace(self, S):
         path = []
         while S:
