@@ -1,7 +1,5 @@
 '''
 Name: Olivia Fang
-Student ID: 2267383
-Email: olivfwm@uw.edu
 '''
 
 from binary_perceptron import BinaryPerceptron # Your implementation of binary perceptron
@@ -28,11 +26,7 @@ class PlotRingBP(PlotBinaryPerceptron):
         Overrides the method in PlotBinaryPerceptron
         """
         data_as_strings = list(csv.reader(open('ring-data.csv'), delimiter=','))
-        if self.IS_REMAPPED:
-            self.TRAINING_DATA = [[remap(float(f1), float(f2))[0], remap(float(f1), float(f2))[1], int(c)] for [f1, f2, c] in data_as_strings]
-        else:
-            self.TRAINING_DATA = [[float(f1), float(f2), int(c)] for [f1, f2, c] in data_as_strings]
-
+        # Hidden to protect information
 
     def plot(self):
         """
