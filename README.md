@@ -4,3 +4,4 @@ Some example projects including:
 - Observable notebook links on researches and class projects
 - CSE 415 Intro to AI projects (all materials provided by UW)
 - CSE 302 Statistical Computation final project
+- WXML project poster, data processing, etc.
