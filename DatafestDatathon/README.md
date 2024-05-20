@@ -53,5 +53,5 @@ Individual Contribution
 - Examined the predicted estimates with the rest of the dataset through visualizations
 
 Outcome
-- 
+- 4th Place in Best Machine Learning Model Out of 19 Teams
 
