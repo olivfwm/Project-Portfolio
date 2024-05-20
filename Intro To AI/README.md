@@ -8,11 +8,21 @@ Much of the python files only shows partial code, as this portfolio is public, s
 
 All assignments were done individually, so all work have been contributed by me
 
+Below is a general outline, for more detailed description of each project, please check the README.md files in the individual project pages.
+
+
 ## Adverarial Search
 
-In this assignment, I created a program that implements an agent that can participate in a game of K-in-a-Row with Forbidden Squares (defined distinctively for each game). Then the agent's performance is demonstrated through a game transcript of the agent playing against another agent. The strategy used here is minimax search.
+Artificial intelligence agent capable of playing the game "K-in-a-Row with Forbidden Squares". My implementation was focused on crafting a MinimaxAgent, housed within a single Python file named minimax_agent.py. This agent was designed to optimize its performance in the game through a minimax algorithm that searches through all possible moves and consider the consequences, with enhancements for efficiency.
 
-The minimax_agent.py shows the partial code implemented for agent.
-The out.pdf file shows the transcript of a game with another agent.
+## State-Space Search
 
-Out of 20 submissions among our class, I won 7th place.
+Focused on implementing state-space search strategies in deterministic single-agent environments. This assignment explored both blind and heuristic search strategies, using classic problems like the Farmer, Fox, Chicken, and Grain puzzle and the Towers of Hanoi to apply these methods.
+
+## Reinforcement Learning
+
+Practical applications of value iteration and Q-learning in reinforcement learning within a defined Markov Decision Process (MDP), specifically using a "Towers-of-Hanoi World" (TOH World) as the environment.
+
+## Perceptron Learning
+
+Implementing the perceptron linear classifiers by hand, understanding from base code the fundamentals of perceptron learning. Then using the algorithms implemented, attempted to classify the Iris dataset in two different contexts. 
