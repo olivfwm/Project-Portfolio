@@ -1,5 +1,7 @@
 ## Files and their contents
 
+*Note*: These are not the only files to achieve the expected outcomes
+
 - The *minimax_agent.py* shows the **partial** code implemented for agent.
   - Initialization and Setup
   - Agent Introduction
