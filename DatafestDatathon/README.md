@@ -17,7 +17,17 @@ Materials
 Individual Constributions
 - Data processing across several dataset such as page_views, EOC, pulse_ratings
 - K-means clustering on the data to find hidden patterns of student performance measured by EOC
-    - cluster
+    - cluster students into 4 main clusters and looked at the spread of their data for some selected columns, such as number of retry attempts, engagement time, off-page duration, etc. These columns were determined according to their correlation with EOC score
+- Focused on both all book chapters, as well as specific hard chapters, that were determined by visualizations from my team mates
+- Provided recommendations supported by my clustering result
 
 Outcome
 - Best Visualization Award for informative data visualizations that provided supported our recommendations made to CourseKata
+
+## Datathon
+
+Link to event webpage: https://doc.clickup.com/26455927/p/h/t7bvq-3331/ff33c7b7c866f02/t7bvq-3331
+
+Background
+
+
