@@ -14,5 +14,10 @@ Materials
 - Team report and presentation
 - Unsupervised learning notebook by me
 
+Individual Constributions
+- Data processing across several dataset such as page_views, EOC, pulse_ratings
+- K-means clustering on the data to find hidden patterns of student performance measured by EOC
+    - cluster
+
 Outcome
 - Best Visualization Award for informative data visualizations that provided supported our recommendations made to CourseKata
