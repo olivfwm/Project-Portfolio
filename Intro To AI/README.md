@@ -26,3 +26,10 @@ Practical applications of value iteration and Q-learning in reinforcement learni
 ## Perceptron Learning
 
 Implementing the perceptron linear classifiers by hand, understanding from base code the fundamentals of perceptron learning. Then using the algorithms implemented, attempted to classify the Iris dataset in two different contexts. 
+
+## Learning Outcome
+
+- Understanding of AI algorithms from the coding process instead of just using pre-written packages
+- Hands on code experience from implementation, debugging, and application to actual problems
+- Compete against other classmates for chance of improvements in efficiency of algorithms
+- Object-oriented programming with python
