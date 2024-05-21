@@ -14,7 +14,11 @@ Initially for the purpose of efficiency in presenting past works during applicat
 
 ## Sections
 
-#### Data Science Competions
+#### Data Science Events
+
+Work, progress, report related to the data science events participated, such as Datafest 2024, 5th Datathon, and future Data Science For Good 
+
+#### 
 
 Some example projects including:
 - Machine learning done with MIT DATA SCIENCE AND MACHINE LEARNING: MAKING DATA-DRIVEN DECISIONS program
