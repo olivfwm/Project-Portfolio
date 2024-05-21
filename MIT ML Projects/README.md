@@ -4,9 +4,13 @@ This folder contains specifically some most representative projects done learnin
 
 ## Projects
 
-### Case_Study_Notebook.ipynb
+### Case_Study_Notebook.ipynb (deep learning)
 
+- Given a dataset with current credentials, demographics, and work experience related data, conduct HR research on factors that influence people leave their job
+- building a neural network model that predicts the probability that a candidate is looking for a new job, as well as interpret the main factors that affect an employee's decision whether to continue or attrite
 - 
+
+
 
 ## About the program
 
