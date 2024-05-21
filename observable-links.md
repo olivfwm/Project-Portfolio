@@ -4,7 +4,7 @@ This file contains links to the major notebooks I did with Observable, an intera
 
 For more details on each individual notebook, please visit each link, as they are anticipated to be viewed by the public, and much more well written.
 
-All except the Seattle Trees analysis for CSE 412 was individual work.
+All except the Seattle Trees analysis for CSE 412 were individual work.
 
 - Main page: https://observablehq.com/user/@olivfwm
 
