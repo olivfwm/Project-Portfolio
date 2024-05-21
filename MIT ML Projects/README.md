@@ -10,9 +10,14 @@ This folder contains specifically some most representative projects done learnin
 - building a neural network model that predicts the probability that a candidate is looking for a new job, as well as interpret the main factors that affect an employee's decision whether to continue or attrite
 - Start with understanding the data, conducting exploratory data analysis to make decisions for later processes, data cleaning, building models, hyperparameter tuning, and last but not least, make interpretations and recommendations
 
-### Potential-Customers-Prediction.ipynb
+### Potential-Customers-Prediction.ipynb (decision tree)
 
-- 
+- The company in this scenario wants to understand how to better attract potential customers
+- Building decision tree models, visualizing the tree, tuning the tree and as well as understanding the reasons behind each tuning
+- In depth exploratory data analysis, data cleaning
+- Make interpretations and recommendations from the decision tree result
+
+### Recommendation
 
 
 
