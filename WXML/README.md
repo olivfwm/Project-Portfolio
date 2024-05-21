@@ -31,12 +31,29 @@ Conducting machine learning experiments with astrological data to show independe
 
 **Materials**
 
-- Final report in progress
-- 
+- Final report
+  - in progress
+- creditModel.ipynb
+  - experiment with machine learning models on credit card holders information (anonymous and nothing confidential) and their astrological data
+  - the general idea is to fit a good predictive model without astrological data, just general information of each subject, that can be leaked from some other platforms
+  - then add in the astrological data to look at how the model's performance alters
+  - results so far suggests that astrological does not provide further information in the prediction of some features of the subjects 
 
 
 
 ### Individual Contributions
 
+- Meeting twice a week to discuss independent work, and further research directions
+- Contribute ideas on each others works, as well as my own work
+- Provide insights for the team and how my work over the week may or may not help
+- Conduct much of the python coding parts, such as data cleaning, writing algorithms, data analysis, visualizations, machine learning with overfitting the data at hand
+- Give interpretations of my work and improve based on others suggestions
+
 ### Learning Outcomes**
+
+This is the main source of my hands-on research experience. If I will be researching with a team or individually in more professional setting in the near future, this experience has really given me some idea of work as a researcher. It also had a huge influence on my communication and idea sharing skills. My team was easy-going and supportive of bring up and exchanging new ideas, which gave me confidence to discuss my ideas, as well as think outside of the box.
+
+It was also a great opportunity to see what the other teams were working on during the final presentation. Some groups really had high-level research topics, so I learn a lot from their speeches and presentation. 
+
+I anticipate in continuing in this participation or doing something similar.
 
