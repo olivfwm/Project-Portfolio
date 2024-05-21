@@ -8,8 +8,9 @@ This folder contains specifically some most representative projects done learnin
 
 - Given a dataset with current credentials, demographics, and work experience related data, conduct HR research on factors that influence people leave their job
 - building a neural network model that predicts the probability that a candidate is looking for a new job, as well as interpret the main factors that affect an employee's decision whether to continue or attrite
-- Parts
-  - 
+- Start with understanding the data, conducting exploratory data analysis to make decisions for later processes, data cleaning, building models, hyperparameter tuning, and last but not least, make interpretations and recommendations
+
+### 
 
 
 
