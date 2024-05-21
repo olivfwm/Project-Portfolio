@@ -18,8 +18,11 @@ Initially for the purpose of efficiency in presenting past works during applicat
 
 Work, progress, report related to the data science events participated, such as Datafest 2024, 5th Datathon, and future Data Science For Good 
 
-#### Intro To AI
+#### Intro To Artificial Intelligence
 
+LISP, symbol manipulation, knowledge representation, logical and probabilistic reasoning, learning, language understanding, vision, expert systems, and social issues in AI
+
+#### Intro to Machine Learning
 
 
 Some example projects including:
