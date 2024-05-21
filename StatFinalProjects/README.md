@@ -36,4 +36,10 @@ Outcome
 - Learn from others of their topics, skills, ideas, and results
 
 
-## 
+## Attorney Consulting Sessions
+
+Background
+
+This is the final project for Stat 302 Statistical Computing.
+
+We were given the dataset
