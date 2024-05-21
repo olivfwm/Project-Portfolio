@@ -51,6 +51,16 @@ attorney.pdf
 
 **Individual Contributions**
 
-- inspect data with team and coming up with general direction of analysis
-- splitting up work among group members
-- 2nd visualization part on 
+- Inspect data with team and coming up with general direction of analysis
+- Splitting up work among group members
+- 2nd visualization part on Categories Total Counts by States
+- Most of the writing portion to make comprehensive analysis
+- Reading over the entire report to make sure the entire analysis builds up strongly
+
+**Outcome**
+
+- Initial explosure to doing a complete data analysis project with some degree of freedom
+- Learned to work well with teammates where each of us made important contributions
+- Experience with how to plan out a big project, and breaking down into small parts
+- Organize data analysis and visualization together into a final report that stakeholders may learn about the data with
+- Provide reasonable inference based on our outcome
