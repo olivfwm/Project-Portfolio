@@ -17,4 +17,20 @@ Materials
 IMDBFinal.pdf
 - this contains our final presentation and work of the entire team
 
-IMDb Observable notebook: 
+IMDb Observable notebook: https://observablehq.com/d/5e1a96bd21b2c796
+- interactive analysis completed by me, which shows the genre ratings trend and director ratings trend
+
+Individual Contributions
+- Conduct data cleaning for team, sharing ideas of what and how parts of the data should be cleaned
+- Updating parts of the GitHub repository
+- Provide comments and feedbacks to other team members
+- Communicate with the professor to ensure our work progress and acknowledged and that we were taking the right steps toward the right direction
+- Make data visualizations specifically about genre ratings and director ratings
+- Attempt to model the data using different approaches
+- Reherse and present with team about findings
+
+Outcome
+- Learn and get actual experience with how to teamwork using GitHub
+- Understand where to split work and where to work together
+- Experience workplace-like data science projects and the processes
+- Learn from others of their topics, skills, ideas, and results
