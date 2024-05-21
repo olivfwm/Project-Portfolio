@@ -22,6 +22,7 @@ PDF version of the completion certificate is also included.
 ### Recommendation_Systems_Learner_Notebook_Full_Code.ipynb
 
 - Working with Amazon product reviews dataset that contains ratings of different electronic products
+- Take the role as Data Science Manager at Amazon to build a recommendation system to recommend products to customers based on their previous ratings for other products
 - 
 
 
