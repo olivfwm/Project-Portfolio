@@ -53,4 +53,4 @@ attorney.pdf
 
 - inspect data with team and coming up with general direction of analysis
 - splitting up work among group members
-- 
+- 2nd visualization part on 
