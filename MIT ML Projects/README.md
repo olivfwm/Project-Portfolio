@@ -4,8 +4,37 @@ This folder contains specifically some most representative projects done learnin
 
 ### About the program
 
+Composed of several units listed below. Each unit contains lecture videos, checkpoints, mentoring session, master session, and final project for certain units.
+
+#### Making sense of unstructured data
+- Supervised and unsupervised learning with classification and clustering
+- K-Means Clustering
+- PCA and dimensionality reduction
+
+#### Regression
+- Linear and non-linear regression methods
+- Validify models
+- Evaluation metrics
+- Regularization
+
+#### Classification
+- Apply hypothesis testing
+- Tree-based algorithms
+- Ensemble methods
+
+#### Deep Learning
+- Intuition behind deep learning and non-linear mapping output
+- Gradients, back-propagation
+- TenserFlow/Keras usage
+- Basic training algorithms
+
+#### Recommender Systems
+- Intuition and process
+- Nearest neighbors clustering
+- Collaborative filtering
 
 ### Projects
+
 
 
 ### Learning outcome
