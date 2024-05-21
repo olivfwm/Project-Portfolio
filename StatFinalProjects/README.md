@@ -42,4 +42,15 @@ IMDb Observable notebook: https://observablehq.com/d/5e1a96bd21b2c796
 
 This is the final project for Stat 302 Statistical Computing.
 
-We were given the dataset
+We were given several datasets on attoney consulting session data, which covers the location, time duration, type of consultation seeked, questions asked, client information, attorney information. The task was to tell a complete story from the data. 
+
+**Materials**
+
+attorney.pdf
+- contains our combined analysis and final report on our findings
+
+**Individual Contributions**
+
+- inspect data with team and coming up with general direction of analysis
+- splitting up work among group members
+- 
