@@ -49,7 +49,7 @@ Conducting machine learning experiments with astrological data to show independe
 - Conduct much of the python coding parts, such as data cleaning, writing algorithms, data analysis, visualizations, machine learning with overfitting the data at hand
 - Give interpretations of my work and improve based on others suggestions
 
-### Learning Outcomes**
+### Learning Outcomes
 
 This is the main source of my hands-on research experience. If I will be researching with a team or individually in more professional setting in the near future, this experience has really given me some idea of work as a researcher. It also had a huge influence on my communication and idea sharing skills. My team was easy-going and supportive of bring up and exchanging new ideas, which gave me confidence to discuss my ideas, as well as think outside of the box.
 
