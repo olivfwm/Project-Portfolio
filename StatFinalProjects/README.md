@@ -4,7 +4,7 @@ This folder contains final projects for some of my statistics classes.
 
 ## IMDb Movies Trend Analysis
 
-Background
+**Background**
 
 This project was done for Stat 498 Agile Data Science, where I worked in a team of four.
 
@@ -12,7 +12,7 @@ Our task was to build some dashboard, visualization report, models, or other for
 
 The data can be found here: https://developer.imdb.com/non-commercial-datasets/
 
-Materials
+**Materials**
 
 IMDBFinal.pdf
 - this contains our final presentation and work of the entire team
@@ -20,7 +20,7 @@ IMDBFinal.pdf
 IMDb Observable notebook: https://observablehq.com/d/5e1a96bd21b2c796
 - interactive analysis completed by me, which shows the genre ratings trend and director ratings trend
 
-Individual Contributions
+**Individual Contributions**
 - Conduct data cleaning for team, sharing ideas of what and how parts of the data should be cleaned
 - Updating parts of the GitHub repository
 - Provide comments and feedbacks to other team members
@@ -29,7 +29,7 @@ Individual Contributions
 - Attempt to model the data using different approaches
 - Reherse and present with team about findings
 
-Outcome
+**Outcome**
 - Learn and get actual experience with how to teamwork using GitHub
 - Understand where to split work and where to work together
 - Experience workplace-like data science projects and the processes
@@ -38,7 +38,7 @@ Outcome
 
 ## Attorney Consulting Sessions
 
-Background
+**Background**
 
 This is the final project for Stat 302 Statistical Computing.
 
