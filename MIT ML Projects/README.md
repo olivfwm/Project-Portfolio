@@ -2,6 +2,8 @@
 
 This folder contains specifically some most representative projects done learning with the program.
 
+PDF version of the completion certificate is also included.
+
 ## Projects
 
 ### Case_Study_Notebook.ipynb (deep learning)
@@ -17,7 +19,9 @@ This folder contains specifically some most representative projects done learnin
 - In depth exploratory data analysis, data cleaning
 - Make interpretations and recommendations from the decision tree result
 
-### Recommendation
+### Recommendation_Systems_Learner_Notebook_Full_Code.ipynb
+
+- 
 
 
 
