@@ -13,13 +13,13 @@ The course was mainly focused on
 Here are some of the representative and meaningful work I have done.
 
 ## Deep Learning
-Background
+**Background**
 
 Different from previous assignments, where we mainly used Scikit-learn packages for machine learning models, in this project,
 we were given a chance to explore with the library **PyTorch**. The specific task that we are trying to do is use **neural network**
 to do **image classification**.
 
-Learning outcome
+**Learning outcome**
 - A total of 5 neural nets, with different architectures to compare the performances
 - Usage of kernels to create convolutional layers to reduce overfitting, as well as improve efficiency
 - Usage of pooling and activation function
@@ -32,14 +32,14 @@ on the performance of the model
 
 Link to kaggle: https://www.kaggle.com/competitions/cse-stat-416-24-sp-assignment-5/overview
 
-Background
+**Background**
 
 In this assignment, we are tasked with developing a predictive model using data from edX online courses offered by Harvard and MIT. 
 The goal is to predict whether a student will complete an online course based on their activity patterns. 
 We are provided with a training dataset for model development and a test dataset for evaluation. 
 This setup mimics real-world machine learning applications where models are trained on available data but ultimately evaluated on unseen data to gauge future performance.
 
-Learning Outcomes
+**Learning Outcomes**
 - applying machine learning techniques to solve problems using real-world datasets, enhancing our understanding of how models are built, evaluated, and deployed
 - choose our own model that we have learned over the course and trying combinations of different things
 - learn to assess the generalization ability of our models
