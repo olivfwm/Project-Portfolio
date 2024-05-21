@@ -34,3 +34,6 @@ Outcome
 - Understand where to split work and where to work together
 - Experience workplace-like data science projects and the processes
 - Learn from others of their topics, skills, ideas, and results
+
+
+## 
