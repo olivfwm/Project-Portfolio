@@ -23,7 +23,10 @@ PDF version of the completion certificate is also included.
 
 - Working with Amazon product reviews dataset that contains ratings of different electronic products
 - Take the role as Data Science Manager at Amazon to build a recommendation system to recommend products to customers based on their previous ratings for other products
-- 
+- As all projects, understand data through EDA and perform data cleaning
+- Build three different types of recommendation models, such as user-user based, item-item based, and model based
+- Give recommendations to user using different models
+- Evaluate with different metrics
 
 
 
@@ -61,3 +64,9 @@ Composed of several units listed below. Each unit contains lecture videos, check
 
 
 ## Learning outcome
+
+This is my first time being exposed to machine learning concepts, as well as the first time I was officially taught with Python. From this program, I was really able to get tons of practice with data analysis and visualization, as it was required for every big or small assignments, before continuing to the machine learning parts. 
+
+I was also well introduced to the majority different topics in machine learning, and getting a good practice with each of those. The lectures and checkpoints ensured I understood the concepts, and the projects made sure I know how to apply these techniques to actual data.
+
+Taking this course really allowed to feel like if I were given some data, I know what I can try to do with it. It also gave me a headstart for other courses that are related to python and machine learning, allowing me to be able to learn deeper concepts without being left behind.
