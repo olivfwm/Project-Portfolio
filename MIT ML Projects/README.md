@@ -2,7 +2,13 @@
 
 This folder contains specifically some most representative projects done learning with the program.
 
-### About the program
+## Projects
+
+### Case_Study_Notebook.ipynb
+
+- 
+
+## About the program
 
 Composed of several units listed below. Each unit contains lecture videos, checkpoints, mentoring session, master session, and final project for certain units.
 
@@ -33,8 +39,6 @@ Composed of several units listed below. Each unit contains lecture videos, check
 - Nearest neighbors clustering
 - Collaborative filtering
 
-### Projects
 
 
-
-### Learning outcome
+## Learning outcome
