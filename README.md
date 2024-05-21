@@ -44,5 +44,46 @@ Research under mathematics department at UW for over 2 quarters. Receiving credi
 
 ## Intended Audience
 ### Industries
-- Data Science Field
-  - 
+- Data Analytics focused, please check...
+  - Statistics final projects
+  - WXML
+  - Data science events
+  - Observable notebooks
+ 
+- Machine Learning focused, please check...
+  - Intro to AI
+  - Intro to ML
+  - MIT ML Certificate
+  - Data science events
+  - WXML
+  - Statistics independent study (?)
+ 
+- Statistical Analysis focused, please check...
+  - Data science events
+  - Statistics final projects
+  - Statistics independent study (?)
+ 
+### Academia
+- Statistics
+  - Statistics final projects
+  - Data science events
+  - Observable notebooks
+  - Intro to ML
+  - Statistics independent study (?)
+ 
+- Computer Science
+  - Intro to ML
+  - Intro to AI
+  - Personal website
+ 
+- Mathematics
+  - WXML
+  - Personal website
+ 
+### Research
+- WXML
+- Observable notebooks
+- Statistics independent study (?)
+
+### For more information
+Contact: olivfwm@uw.edu
