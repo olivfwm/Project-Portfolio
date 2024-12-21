@@ -4,13 +4,15 @@ This contains the individual research I did with my supervisor, Emanuela Furfaro
 
 **Background**
 
-I will analyze data collected from three sensors attached to a tango dancer. This phase will be crucial for understanding and quantifying the variability of the dancer's movements, even when the same movements are repeated.
+Movement data is collected from three sensors attached to a tango dancer repeating each movement over a fixed time period. We will start with analyzing the move 'ocho'. The analysis phase will be crucial for understanding and quantifying the variability of the dancer's movements.
 
-Building on the insights gained from the data analysis step, I will apply and perhaps refine the classification methods discussed in previous scholar articles to effectively identify and categorize different dance movements. Hierarchical clustering is also utilized to identify latent patterns or anomalies, in order to improve generalizability of the movement classifying algorithm.
+Building on the insights gained from the data analysis step, classification methods discussed in previous scholar articles will be applied to identify and categorize different dance movements. Hierarchical clustering is also utilized to identify latent patterns or anomalies, in order to improve generalizability of the movement classifying algorithm.
+
+The goal we have now is to be able to classify these dance movements based on the given motion data, and be able to generalize the classification even when the data is collected from different dancers and the movement is done slightly differently from time to time.
 
 ### Autumn 2024 Focus
 
-The sensors provided measurements of movements from three perspectives: gyroscope, acceleration, and euler, recorded on all three axes. We started by only looking at the acceleration first, as we believe it gives most information about identifying a dance movement. After carefully examining the features with various visualizations, including interactive ones, we gained clearer understanding about the behaviors of the data, which helped us to decide specific methodologies to perform model training and prediciting.
+The sensors provided measurements of movements from three perspectives: gyroscope, acceleration, and euler, recorded on all three axes. We started by only looking at the acceleration first, as we believe it gives most information about identifying a dance movement. After carefully examining the features with various visualizations, including interactive ones, we spot unexpected patterns and outliers. This is good news, since we gained clearer understanding about the behaviors of the data, and it helped us to decide on which specific methodologies to perform model training and prediciting.
 
 We believe that it is hard to tell by eyeballing, which data points are actually different from other data points, so we can use hierarchical clustering to cluster the data before continuing to classifying movements. Currently, we found that we may create a huge cluster and some small clusters by directly applying euclidean average linkage clustering. Our next step is to experiment with more techniques to make more sense out of the clustering.
 
