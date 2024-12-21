@@ -1,4 +1,4 @@
-# Statistics Honors Individual Study
+# Movements Classification For Statistics Honors Individual Study
 
 This contains the individual research I did with my supervisor, Emanuela Furfaro, to fulfill the requirement of being a part of the statistical honors program.
 
