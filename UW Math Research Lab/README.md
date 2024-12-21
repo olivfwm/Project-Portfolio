@@ -1,4 +1,4 @@
-# Washington eXperimental Mathematics Lab
+# Divination Systems Research With Washington eXperimental Mathematics Lab
 
 This is the research credit program under the Mathematics department at UW.
 
