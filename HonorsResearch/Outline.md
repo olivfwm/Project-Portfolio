@@ -1,4 +1,4 @@
-# Statistics Honors Individual Study - Movements Classification and Analysis
+# Statistics Honors Individual Study - Tango Movements Classification and Analysis
 
 This is a placeholder for future work with my supervisor on the project of analyzing tango-movments.
 
