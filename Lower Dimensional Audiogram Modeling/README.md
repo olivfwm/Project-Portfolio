@@ -1,4 +1,4 @@
-# Speech And Hearing Lab
+# Audiogram Modeling With Speech And Hearing Lab
 
 This contains the individual research I did with the UW Speech Hearing Lab, specifically supervised by Dr. Shen. We aimed to apply ML techniques to achieve more accessible hearing test.
 
