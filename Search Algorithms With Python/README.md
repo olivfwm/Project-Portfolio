@@ -11,7 +11,7 @@ All assignments were done individually, so all work have been contributed by me
 Below is a general outline, for more detailed description of each project, please check the README.md files in the individual project pages.
 
 
-## Adverarial Search
+## Adversarial Search
 
 Artificial intelligence agent capable of playing the game "K-in-a-Row with Forbidden Squares". My implementation was focused on crafting a MinimaxAgent, housed within a single Python file named minimax_agent.py. This agent was designed to optimize its performance in the game through a minimax algorithm that searches through all possible moves and consider the consequences, with enhancements for efficiency.
 
