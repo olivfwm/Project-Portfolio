@@ -22,21 +22,37 @@ Naturally, we experimented with other popular methods to answer these questions.
 
 Currently we are exploring addition of other measurements as predictors to further minimize error and assessing non-linear dimensionality reduction techniques and machine learning models
 
-(below is still being updated)
 
 **Materials**
 
 - data
-  - 
+  - audiogram.csv: raw data
+  - **audiogram_cca.csv**: cleaned data used for cca
+  - audiogram_clean.csv: cleaned data for exploratory analysis and cv
+  - audiogram_interest.csv: raw data containing columns of interest
+  - audiogram_x.csv: cleaned data used for pca practice
 
-### Winter 2025 Focus (ip)
+- Google collab notebooks (order matters)
+  - sphsc_exploratory.ipynb: Contains exploratory data analysis on the raw data, including visualizations and preliminary statistical analysis to understand data distributions and relationships. Demonstrates plausibility of dimensional reduction on the audiogram measurements.
+  - sphsc_pca.ipynb: Implements PCA for dimensionality reduction on audiogram measurements, detailing the variance explained by the principal components and their implications for the data structure.
+  - sphsc_cv.ipynb: Focuses on cross-validation techniques to evaluate the predictive performance and stability of pca applied to the data.
+  - sphsc_cca_byhand.ipynb: This notebook manually performs Canonical Correlation Analysis (CCA) with gender, age, DIN as X variables, and audiogram measurements as Y variables. Exploring direct implementation and interpretation of the canonical correlations between sets of variables without using built-in functions.
+  - sphsc_cca.ipynb: Automates CCA using sklearn's CCA implementation.
 
-Continue to work on clustering and movements classification
+
+### Winter 2025 Focus (Gap on the research)
+
+Refining the analytical process by cleaning up code, renaming variables for clarity, and thoroughly documenting each file and function. In-code annotations were added to explain variable purposes and complex code operations. Additionally, comments were included to reflect the thought process and observations at each analytical step.
+
+Moving forward, the plan is to leverage the high correlation among audiogram measurements to improve prediction accuracy. We aim to identify which predictions are most accurate and adjust other features based on these reliable predictions. Despite the initial lack of performance improvement with additional predictors, further validation is necessary to ensure the model is accurately learning and representing the underlying relationships.
 
 
 ### Individual Contributions
 
-- 
+All work in the notebooks reflects individual contributions, with ideas brainstormed with Dr. Shen. This includes implementing statistical models, coding, and interpreting results.
+
 ### Learning Outcomes
 
-
+- Multivariate Predicting: Techniques like CCA and PCA help in predicting relationships between multiple variables.
+- Dimensional Reduction: PCA and manual analysis in notebooks show how to reduce the number of variables while preserving essential information.
+- Cross Validation: Evaluate model reliability and performance across different subsets of data.
