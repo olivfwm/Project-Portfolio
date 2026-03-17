@@ -1,4 +1,3 @@
-
 import os
 os.environ['OPENBLAS_NUM_THREADS'] = '1'
 
@@ -8,7 +7,7 @@ import numpy as np
 import scipy.sparse as sp
 import implicit
 
-# Need to first save track metadata and trained ALS model to artifacts folder   
+# Need to first save track metadata and trained ALS model to artifacts folder
 # Add this after the cell that generates track metadata list:
 # track_metadata_str_keys = {str(k): v for k, v in track_metadata.items()}
 
@@ -23,7 +22,7 @@ import implicit
 
 # 1. Setup Paths & Load Data Safely
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-ART_DIR = os.path.join(BASE_DIR, 'artifacts_mpd_shannon')
+ART_DIR = os.path.join(BASE_DIR, 'artifacts_mpd')
 
 @st.cache_resource
 def load_data():
@@ -31,13 +30,13 @@ def load_data():
         track_metadata = json.load(f)
     with open(os.path.join(ART_DIR, 'track2idx.json'), 'r', encoding="utf-8") as f:
         track2idx = json.load(f)
-        
+
     model_path = os.path.join(ART_DIR, 'als_model.npz')
     if os.path.exists(model_path):
         model = implicit.cpu.als.AlternatingLeastSquares.load(model_path)
     else:
         model = None
-        
+
     return track_metadata, track2idx, model
 
 track_metadata, track2idx, model = load_data()
@@ -61,7 +60,7 @@ if not st.session_state.seed_playlist:
 else:
     for i, track in enumerate(st.session_state.seed_playlist):
         st.write(f"**{i+1}.** {track['name']} by {track['artist']}")
-    
+
     if st.button("🗑️ Clear Playlist"):
         st.session_state.seed_playlist = []
         st.rerun()
@@ -76,9 +75,9 @@ if search_query:
     for idx, data in track_metadata.items():
         if search_query.lower() in data['track_name'].lower():
             matches.append((idx, data['track_name'], data['artist_name'], data['track_uri']))
-            if len(matches) >= 5: 
+            if len(matches) >= 5:
                 break
-                
+
     if not matches:
         st.warning("No songs found.")
     else:
@@ -100,34 +99,34 @@ st.divider()
 if len(st.session_state.seed_playlist) > 0:
     st.subheader("🔥 AI Recommendations")
     st.write("Click ➕ to add a recommended song to your playlist. The AI will instantly adapt to your new vibe!")
-    
+
     # 1. Get all math indices from the session state
     seed_indices = [track['math_index'] for track in st.session_state.seed_playlist]
-    
+
     # 2. Build the Matrix Row for this user
     num_total_tracks = len(track2idx)
     data = [1.0] * len(seed_indices)
-    rows = [0] * len(seed_indices) 
+    rows = [0] * len(seed_indices)
     user_items = sp.csr_matrix((data, (rows, seed_indices)), shape=(1, num_total_tracks))
-    
+
     # 3. Ask the model for recommendations (ask for extra in case of duplicates)
     ids, scores = model.recommend(0, user_items[0], N=20, recalculate_user=True)
-    
+
     # 4. Display results with Add Buttons!
     rank = 1
     for recommended_idx in ids:
         rec_idx_int = int(recommended_idx) # Ensure it's a clean integer
-        
+
         # Don't recommend songs already in the seed playlist
         if rec_idx_int not in seed_indices:
             rec_data = track_metadata[str(rec_idx_int)]
-            
+
             # Use columns to make it look like a real app (Text on left, Button on right)
             col1, col2 = st.columns([4, 1])
-            
+
             with col1:
                 st.write(f"**{rank}.** {rec_data['track_name']} by {rec_data['artist_name']}")
-                
+
             with col2:
                 # Add a unique key to the button so Streamlit doesn't get confused
                 if st.button("➕ Add", key=f"rec_{rec_idx_int}"):
@@ -138,7 +137,7 @@ if len(st.session_state.seed_playlist) > 0:
                     })
                     # Rerun instantly recalculates the math with the new song included!
                     st.rerun()
-            
+
             rank += 1
             if rank > 10:
                 break
